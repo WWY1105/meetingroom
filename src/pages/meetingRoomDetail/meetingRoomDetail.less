@@ -1,0 +1,21 @@
+@import '../../index.less';
+.meetingRoomDetail{
+    & .datePickerBox{
+        background: #fff;
+    }
+    & .am-list-body::before,
+    & .am-list-body::after{
+        height:0!important;
+        display: none!important;
+    }
+    &  .am-list-item .am-list-line .am-list-extra{
+        flex-basis: 100%!important;
+        font-size: @textTitleSize!important;
+    }
+    & .datePickerBox i.icon-add{
+        margin:0;
+        background: @primary-color;
+        width: 100%;
+        display: inline-block;
+    }
+}

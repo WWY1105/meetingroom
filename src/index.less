@@ -1,0 +1,89 @@
+@import "~antd-mobile/dist/antd-mobile.less";   // 引入官方提供的 less 样式入口文件
+@primary-color: #2dbaac; //修改主题
+@comnonColor:#0b080b;
+@textCommonSize:12px;
+@textTitleSize:14px;
+@zero:0;
+@margin-top:10px;
+@padding:10px;
+@border-bottom:1px solid #eee;
+@margin-bottom:10px;
+@btnTextSize:17px;
+@notActiveColor:#666;
+@contentTextColor:#686868;
+@bgW{
+    background:#fff;
+}
+.mainText{
+    color: @primary-color
+}
+.commonText{
+    color: @comnonColor;
+    font-size: @textCommonSize
+}
+.titleText{
+    color: @primary-color;
+    font-size: @textTitleSize
+}
+.mainbtn,.notActivebtn{
+    background: @primary-color;
+    color: #fff;
+    font-size: @textCommonSize;
+    border-color: @primary-color;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+
+}
+.notActivebtn{
+    background: @notActiveColor;
+    border-color:@notActiveColor;
+}
+.flexEnd{
+    display: flex;
+    justify-content: flex-end;
+}
+.flexStart{
+    display: flex;
+    justify-content: flex-start;
+}
+.bgW{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: #f5f5f5;
+}
+.flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tips{
+    color: #b0b0b0;
+    margin: 0;
+}
+.textRight{
+    text-align: right;
+}
+.marginTop{
+    margin-top: 10px;
+}
+.am-whitespace{
+    background: #f5f5f5;
+}
+.longbtn{
+    background: @primary-color;
+    color: #fff;
+    font-size: @btnTextSize;
+    border-color: @primary-color;
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+}
+.am-button-primary::before{
+border-color: @primary-color
+}
