@@ -8,7 +8,13 @@ import './eachMeetingRoom.less'
     }
  
     render() {
-       
+       let btns;
+       // 如果从预约会议室进来直接预定；如果从所有会议室进来就是查看占用    
+       if(this.props.from=="meetingRoom"){
+            btns=<Button type="primary" style={{marginRight:'10px'}} className="mainbtn" onClick={this.props.bookMeetingRoom}>查看占用</Button>  
+       }else{
+            btns=<Button type="primary" className="mainbtn"  onClick={()=>{this.props.clickBooking(this.props.roomIndex)}}>预定</Button>
+       }
         return (
             <div className="eachPart" onClick={this.props.toSeeOccupancy}>
                 <div className="titleBox">
@@ -20,8 +26,7 @@ import './eachMeetingRoom.less'
                     <p>地址：11楼东侧</p>
                 </div>
                 <div className="btnBox flexEnd">
-                 {/* <Button type="primary" style={{marginRight:'10px'}} className="mainbtn" onClick={this.props.bookMeetingRoom}>查看占用</Button> */}
-                 <Button type="primary" className="mainbtn"  onClick={()=>{this.props.clickBooking(this.props.roomIndex)}}>预定</Button>
+                 {btns}
                 </div>
             </div>
         )

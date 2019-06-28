@@ -9,7 +9,6 @@ class MeetingRooms extends Component{
             path:'/meetingRooms'
         }
         this.getCurrentPath=this.getCurrentPath.bind(this)
-        // this.bookMeetingRoom=this.bookMeetingRoom.bind(this)
     }
     // 底部跳转
     getCurrentPath(name){
@@ -28,9 +27,9 @@ class MeetingRooms extends Component{
     render(){
         return (
             <div style={{paddingBottom:'70px'}}>
-                <EachMeetingRoom roomName="11楼5室" bookMeetingRoom={this.bookMeetingRoom.bind(this)} toSeeOccupancy={this.toSeeOccupancy.bind(this)}/>
-                <EachMeetingRoom roomName="11楼5室" bookMeetingRoom={this.bookMeetingRoom.bind(this)} toSeeOccupancy={this.toSeeOccupancy.bind(this)}/>
-                <EachMeetingRoom roomName="11楼5室" bookMeetingRoom={this.bookMeetingRoom.bind(this)} toSeeOccupancy={this.toSeeOccupancy.bind(this)}/>
+                <EachMeetingRoom from="meetingRoom" roomName="11楼5室" bookMeetingRoom={this.bookMeetingRoom.bind(this)} toSeeOccupancy={this.toSeeOccupancy.bind(this)}/>
+                <EachMeetingRoom from="meetingRoom" roomName="11楼5室" bookMeetingRoom={this.bookMeetingRoom.bind(this)} toSeeOccupancy={this.toSeeOccupancy.bind(this)}/>
+                <EachMeetingRoom from="meetingRoom" roomName="11楼5室" bookMeetingRoom={this.bookMeetingRoom.bind(this)} toSeeOccupancy={this.toSeeOccupancy.bind(this)}/>
                 <Footer getCurrentPath={this.getCurrentPath} path={this.state.path}  />
             </div>
         )

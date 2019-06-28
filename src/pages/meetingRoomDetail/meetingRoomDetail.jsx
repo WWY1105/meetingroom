@@ -37,9 +37,11 @@ class MeetingRoomDetail extends Component{
                 </div>
                 <WhiteSpace size="sm"/>
                 {/* 循环每一个会议 */}
-                <EachMeeting meetingStatus='true'/>
+                <EachMeeting meetingStatus='1'/>
                 <WhiteSpace size="sm"/>
-                <EachMeeting meetingStatus='false'/>
+                <EachMeeting meetingStatus='2'/>
+                <WhiteSpace size="sm"/>
+                <EachMeeting meetingStatus='3'/>
             </div>
         )
     }

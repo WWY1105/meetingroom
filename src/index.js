@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Index from './pages/index/index';
+import MyMeeting from './pages/myMeeting/myMeeting';
 import MeetingRooms from './pages/meetingRooms/meetingRooms';
 import Mine from './pages/mine/mine';
+import MyMsg from './pages/myMsg/myMsg';
 import ProposeAMeeting from './pages/proposeAMeeting/proposeAMeeting';
 import MeetingRoomDetail from './pages/meetingRoomDetail/meetingRoomDetail';
 import OccupancyOfMeeting from './pages/occupancyOfMeeting/occupancyOfMeeting';
@@ -18,9 +20,11 @@ ReactDOM.render(
                <Route  exact path="/" component={Index} />
                <Route path="/meetingRooms" component={MeetingRooms} />
                <Route path="/mine" component={Mine} />
+               <Route path="/myMsg" component={MyMsg} />
                <Route path="/proposeAMeeting" component={ProposeAMeeting} />
                <Route path="/occupancyOfMeeting" component={OccupancyOfMeeting} />
                <Route path="/meetingRoomDetail" component={MeetingRoomDetail} />
+               <Route path="/myMeeting" component={MyMeeting} />
         </Switch>
         </Router>
         </div>

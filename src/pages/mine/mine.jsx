@@ -34,6 +34,13 @@ class Mine extends Component{
     getCurrentPath(name){
          this.props.history.push(name)
     }
+    // 点击中间的nav跳转
+    navigationTo=(url)=>{
+        // alert(1)
+        this.props.history.push({
+            pathname:url
+        })
+    }
     render(){
         // console.log(this)
 
@@ -50,8 +57,8 @@ class Mine extends Component{
                     <div className="eachList">
                     <List renderHeader={() => ''} className="my-list">
                     {
-                        this.state.navLists.map(item=>(
-                                <Item extra={<Badge text={item.num} overflowCount={3} />} arrow="horizontal" onClick={() => {}}>{item.title}</Item>
+                        this.state.navLists.map((item,index)=>(
+                             <Item extra={<Badge text={item.num} overflowCount={3} />} arrow="horizontal" key={index} onClick={() => {this.navigationTo(item.path)}}>{item.title}</Item>
                         ))
                     }
                     </List>

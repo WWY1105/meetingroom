@@ -51,7 +51,7 @@ class OccupancyOfMeeting extends Component{
                 {/* 循环每一个会议室 */}
                 {
                     this.state.roomList.map((item,index)=>{
-                        return  <EachMeetingRoom key={index} roomName={item.roomName} roomIndex={index}  clickBooking={this.clickBooking.bind(this)}/>
+                        return  <EachMeetingRoom key={index} from="occupancyOfMeeting" roomName={item.roomName} roomIndex={index}  clickBooking={this.clickBooking.bind(this)}/>
                     })
                 }
                 
